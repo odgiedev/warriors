@@ -27,6 +27,6 @@ Route::get("warriors/{id}", [WarriorsController::class, "show"]);
 
 Route::post("warriors/create", [WarriorsController::class, "store"]);
 
-// Route::get("warriors/update/{id}", [WarriorsController::class, "index"]);
+Route::put("warriors/update/{id}", [WarriorsController::class, "update"]);
 
-// Route::get("warriors/delete/{id}", [WarriorsController::class, "index"]);
+Route::delete("warriors/delete/{id}", [WarriorsController::class, "destroy"]);
